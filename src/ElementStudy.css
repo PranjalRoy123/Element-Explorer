@@ -1,0 +1,94 @@
+:root {
+  --name-color: hsl(350, 90%, 50%);
+  --sub-heading-color: hsl(270, 90%, 70%);
+  --label-color: hsl(220, 90%,70%);
+  --content-color: hsl(36, 90%, 60%);
+  --bg-color: hsl(0, 0%, 7%);
+  --ff-primary: system-ui, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.element-study {
+  padding: 20px;
+  padding-bottom: 50px;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#element-name {
+  color: var(--name-color);
+  font-size: 6rem;
+  font-family: var(--ff-primary);
+}
+
+.sub-heading {
+  color: var(--sub-heading-color);
+  font-size: 4rem;
+  font-family: var(--ff-primary);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem
+}
+
+.info {
+  display: flex;
+  gap: 20px;
+}
+
+.info > div {
+  color: var(--content-color);
+  font-size: 2.2rem;
+  font-family: var(--ff-primary);
+  font-weight: 500;
+}
+
+.info > .label {
+  color: var(--label-color);
+  font-weight: 500;
+}
+
+select {
+  width: 100%;
+  padding: 15px;
+  font-size: 30px;
+  font-family: var(--ff-primary);
+  color: white;
+  background-color: hsl(170, 30%, 20%);
+  border: 2px solid #999;
+}
+
+#nucleus {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: red;
+  left: 50%;
+  transform: translateX(-50%), translateY(-50%)
+}
+
+.shell {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #bbb;
+  left: 50%;
+  transform: translate(-50%)
+}
+
