@@ -1,6 +1,6 @@
 :root {
   --name-color: hsl(5, 65%, 50%);
-  --sub-heading-color: hsl(170, 55%, 45%);
+  --sub-heading-color: hsl(170, 55%, 40%);
   --label-color: hsl(210, 65%, 65%);
   --content-color: hsl(50, 30%, 50%);
   --bg-color: hsl(330, 15%, 10%);
@@ -68,12 +68,10 @@
 
 select {
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   font-size: 20px;
   font-family: system-ui, sans-serif;
   color: white;
-  background-color: hsl(170, 30%, 20%);
-  border: 2px solid #999;
+  background-color: var(--bg-color);
 }
-
 
