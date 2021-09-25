@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./ElementStudy.css";
+import Atom from "./Atom";
 
 export default function ElementStudy() {
   const [element, setElement] = useState("Hydrogen");
@@ -64,17 +65,7 @@ export default function ElementStudy() {
         {element} ({data[element].symbol})
       </h1>
 
-      {/* {<div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",+
-          position: "relative",
-        }}
-      >
-        <div id="nucleus"></div>
-        <div className="shell" style={{ width: 100, height: 100 }}></div>
-      </div>} */}
+      <Atom config={data[element].shells} />
 
       <div className="section">
         <h2 className="sub-heading">Summary</h2>

@@ -1,0 +1,24 @@
+.atom {
+  position: relative;
+  animation: shellRotation 10s linear infinite;
+}
+
+.nucleus {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@keyframes shellRotation {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {  
+    transform:  rotateZ(360deg);
+  }
+}

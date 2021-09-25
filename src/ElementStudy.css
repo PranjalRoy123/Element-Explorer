@@ -28,6 +28,7 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
+  overflow-y: hidden;
 }
 
 #element-name {
@@ -75,20 +76,4 @@ select {
   border: 2px solid #999;
 }
 
-#nucleus {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: red;
-  left: 50%;
-  transform: translateX(-50%), translateY(-50%)
-}
-
-.shell {
-  position: absolute;
-  border-radius: 50%;
-  border: 2px solid #bbb;
-  left: 50%;
-  transform: translate(-50%)
-}
 

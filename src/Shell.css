@@ -1,0 +1,18 @@
+.shell {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  transform: translateX(-50%) translateY(-50%) rotateZ(var(--starting-rotate));
+}
+
+.electron {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #ccc;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%)
+}
