@@ -40,7 +40,6 @@ export default function ElementStudy() {
       .then((res) => res.json())
       .then((jsonData) => {
         setData(jsonData);
-        console.log(jsonData);
       });
   }, []);
 

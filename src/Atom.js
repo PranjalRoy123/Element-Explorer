@@ -6,10 +6,9 @@ function generateShells(shells) {
   const shellList = [];
   shells.forEach((n, index) => {
     for (let i = 0; i < n; i++) {
-      shellList.push(<Shell i={i} n={n} index={index} />);
+      shellList.push(<Shell i={i} n={n} index={index} key={(i, n)} />);
     }
   });
-  console.log(shellList);
   return shellList;
 }
 
