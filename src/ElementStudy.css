@@ -1,10 +1,11 @@
 :root {
-  --name-color: hsl(350, 90%, 50%);
-  --sub-heading-color: hsl(270, 90%, 70%);
-  --label-color: hsl(220, 90%,70%);
-  --content-color: hsl(36, 90%, 60%);
-  --bg-color: hsl(0, 0%, 7%);
-  --ff-primary: system-ui, sans-serif;
+  --name-color: hsl(5, 65%, 50%);
+  --sub-heading-color: hsl(170, 55%, 45%);
+  --label-color: hsl(210, 65%, 65%);
+  --content-color: hsl(50, 30%, 50%);
+  --bg-color: hsl(330, 15%, 10%);
+  --ff-primary: "Open Sans", system-ui, sans-serif;
+  --ff-secondary: "Roboto", system-ui, sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -27,7 +28,7 @@
   background-color: var(--bg-color);
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 60px;
   overflow-y: hidden;
 }
 
@@ -57,20 +58,19 @@
 .info > div {
   color: var(--content-color);
   font-size: 2.2rem;
-  font-family: var(--ff-primary);
-  font-weight: 500;
+  font-family: system-ui, sans-serif;
 }
 
 .info > .label {
   color: var(--label-color);
-  font-weight: 500;
+  font-family: var(--ff-secondary);
 }
 
 select {
   width: 100%;
-  padding: 15px;
-  font-size: 30px;
-  font-family: var(--ff-primary);
+  padding: 10px;
+  font-size: 20px;
+  font-family: system-ui, sans-serif;
   color: white;
   background-color: hsl(170, 30%, 20%);
   border: 2px solid #999;

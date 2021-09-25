@@ -7,7 +7,7 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: red;
+  background-color: hsl(0, 70%, 40%);
   position: absolute;
   left: 50%;
   top: 50%;
