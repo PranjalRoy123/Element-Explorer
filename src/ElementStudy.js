@@ -70,24 +70,24 @@ export default function ElementStudy() {
         <h2 className="sub-heading">Summary</h2>
         {data[element].summary && (
           <div className="info">
-            <div className="label">Information: </div>
-            <div className="value">{data[element].summary}</div>
+            <h3 className="label">Information: </h3>
+            <p className="value">{data[element].summary}</p>
           </div>
         )}
 
         {data[element].appearance && (
           <div className="info">
-            <div className="label">Appearance: </div>
-            <div className="value" style={{ textTransform: "capitalize" }}>
+            <h3 className="label">Appearance: </h3>
+            <p className="value" style={{ textTransform: "capitalize" }}>
               {data[element].appearance}
-            </div>
+            </p>
           </div>
         )}
 
         {data[element].color && (
           <div className="info">
-            <div className="label">Color: </div>
-            <div className="value">{data[element].color}</div>
+            <h3 className="label">Color: </h3>
+            <p className="value">{data[element].color}</p>
           </div>
         )}
       </div>
@@ -96,7 +96,7 @@ export default function ElementStudy() {
         <h2 className="sub-heading">Chemical Properties</h2>
         {data[element].category && (
           <div className="info">
-            <div className="label">Category: </div>
+            <h3 className="label">Category: </h3>
             <div className="value" style={{ textTransform: "capitalize" }}>
               {data[element].category}
             </div>
@@ -105,57 +105,57 @@ export default function ElementStudy() {
 
         {data[element].number && (
           <div className="info">
-            <div className="label">Atomic Number: </div>
-            <div className="value">{data[element].number}</div>
+            <h3 className="label">Atomic Number: </h3>
+            <p className="value">{data[element].number}</p>
           </div>
         )}
 
         {data[element].atomic_mass && (
           <div className="info">
-            <div className="label">Atomic Mass: </div>
-            <div className="value">{data[element].atomic_mass} amu</div>
+            <h3 className="label">Atomic Mass: </h3>
+            <p className="value">{data[element].atomic_mass} amu</p>
           </div>
         )}
 
         {data[element].density && (
           <div className="info">
-            <div className="label">Density (at STP): </div>
-            <div className="value">{data[element].density} g/L</div>
+            <h3 className="label">Density (at STP): </h3>
+            <p className="value">{data[element].density} g/L</p>
           </div>
         )}
 
         {data[element].boil && (
           <div className="info">
-            <div className="label">Boiling Point: </div>
-            <div className="value">{data[element].boil} K</div>
+            <h3 className="label">Boiling Point: </h3>
+            <p className="value">{data[element].boil} K</p>
           </div>
         )}
 
         {data[element].melt && (
           <div className="info">
-            <div className="label">Melting Point: </div>
-            <div className="value">{data[element].melt} K</div>
+            <h3 className="label">Melting Point: </h3>
+            <p className="value">{data[element].melt} K</p>
           </div>
         )}
 
         {data[element].molar_heat && (
           <div className="info">
-            <div className="label">Molar Heat: </div>
-            <div className="value">{data[element].molar_heat} K</div>
+            <h3 className="label">Molar Heat: </h3>
+            <p className="value">{data[element].molar_heat} K</p>
           </div>
         )}
 
         {data[element].phase && (
           <div className="info">
-            <div className="label">State (in room temperature): </div>
-            <div className="value">{data[element].phase}</div>
+            <h3 className="label">State (in room temperature): </h3>
+            <p className="value">{data[element].phase}</p>
           </div>
         )}
 
         {data[element].shells && (
           <div className="info">
-            <div className="label">Electronic configuration: </div>
-            <div className="value">
+            <h3 className="label">Electronic configuration: </h3>
+            <p className="value">
               {data[element].shells.map((s, i) => {
                 if (i < data[element].shells.length - 1) {
                   return `${s}, `;
@@ -163,7 +163,7 @@ export default function ElementStudy() {
                   return `${s}`;
                 }
               })}
-            </div>
+            </p>
           </div>
         )}
       </div>
@@ -172,15 +172,15 @@ export default function ElementStudy() {
         <h2 className="sub-heading">History</h2>
         {data[element].discovered_by && (
           <div className="info">
-            <div className="label">Discovered by: </div>
-            <div className="value">{data[element].discovered_by}</div>
+            <h3 className="label">Discovered by: </h3>
+            <p className="value">{data[element].discovered_by}</p>
           </div>
         )}
 
         {data[element].named_by && (
           <div className="info">
-            <div className="label">Named By: </div>
-            <div className="value">{data[element].named_by}</div>
+            <h3 className="label">Named By: </h3>
+            <p className="value">{data[element].named_by}</p>
           </div>
         )}
       </div>
